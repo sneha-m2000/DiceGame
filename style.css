@@ -1,0 +1,41 @@
+body {
+    background-image: url('assets/Images/backgroundImage.jpg'); /* Add your background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+.dice-container {
+    margin: 20px 0;
+}
+
+.dice-image {
+    width: 100px;
+    height: 100px;
+}
+
+.player-box {
+    padding: 20px;
+    border: 2px solid transparent;
+}
+
+.active-player {
+    border-color: brown;
+    background-color: rgba(0, 0, 255, 0.1);
+}
+
+#roll-button, #reset-button {
+    margin: 10px;
+}
+
+/* CSS styles for the score text */
+.score {
+    color: white;       /* Set the text color to white */
+    font-weight: bold;  /* Make the text bold */
+}

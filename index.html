@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .btn-custom {
+            background-color: darkred;
+            color: white;
+            border: none;
+        }
+
+        .btn-custom:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="mt-5">Dice Game</h1>
+        <div class="row justify-content-center">
+            <div class="col-4 player-box" id="player1-container">
+                <h2>Player 1</h2>
+                <div id="player1-dice" class="dice-container">
+                    <img src="assets/Images/dice-1.png" alt="Dice" class="dice-image">
+                </div>
+                <div id="player1-score" class="score">Score: 0</div>
+            </div>
+            <div class="col-4 player-box" id="player2-container">
+                <h2>Player 2</h2>
+                <div id="player2-dice" class="dice-container">
+                    <img src="assets/Images/dice-1.png" alt="Dice" class="dice-image">
+                </div>
+                <div id="player2-score" class="score">Score: 0</div>
+            </div>
+        </div>
+        <div id="result" class="mt-2"></div>
+        <div id="winner" class="mt-4 font-weight-bold text-danger"></div>
+        <button id="roll-button" class="btn btn-custom mt-3">Roll Dice</button>
+        <button id="reset-button" class="btn btn-custom mt-3">Reset Game</button>
+    </div>
+
+    <audio id="dice-sound" src="assets/DiceSound.mp3" preload="auto"></audio>
+    <audio id="win-sound" src="assets/winnersound.mp3" preload="auto"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
